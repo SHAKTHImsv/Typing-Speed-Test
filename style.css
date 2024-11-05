@@ -1,0 +1,157 @@
+/* Basic styles for the typing speed app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #26cf20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#sentence-container {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#user-input:focus {
+    border-color: #007bff;
+}
+
+#time, #wpm {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#restart-btn:hover {
+    background-color: #218838;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body{
+        padding: 30px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+
+    #sentence-container {
+        font-size: 18px;
+    }
+
+    #user-input {
+        font-size: 16px;
+    }
+
+    #time, #wpm {
+        font-size: 16px;
+    }
+
+    #restart-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        padding: 30px;
+    }
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #sentence-container {
+        font-size: 16px;
+    }
+
+    #user-input {
+        font-size: 14px;
+    }
+
+    #time, #wpm {
+        font-size: 14px;
+    }
+
+    #restart-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        padding: 30px;
+    }
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #sentence-container {
+        font-size: 14px;
+    }
+
+    #user-input {
+        font-size: 12px;
+    }
+
+    #time, #wpm {
+        font-size: 12px;
+    }
+
+    #restart-btn {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+}
